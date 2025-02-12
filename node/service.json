@@ -9,6 +9,26 @@
     "status": {
       "path": "/_v/status/:code",
       "public": true
+    },
+    "sum": {
+      "path": "/_v/status/sum",
+      "public": true
+    },
+    "substraction": {
+      "path": "/_v/status/substraction",
+      "public": true
+    },
+    "division": {
+      "path": "/_v/status/division",
+      "public": true
+    },
+    "multiplication": {
+      "path": "/_v/status/multiplication",
+      "public": true
+    },
+    "generateRandomNumber": {
+      "path": "/_v/status/generateRandomNumber/:max",
+      "public": true
     }
   }
 }

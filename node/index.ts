@@ -4,6 +4,11 @@ import { LRUCache, method, Service } from '@vtex/api'
 import { Clients } from './clients'
 import { status } from './middlewares/status'
 import { validate } from './middlewares/validate'
+import { sum } from './middlewares/sum'
+import { substraction } from './middlewares/substraction'
+import { division } from './middlewares/division'
+import { multiplication } from './middlewares/multiplication'
+import { generateRandomNumber } from './middlewares/generateRandomNumber'
 
 const TIMEOUT_MS = 800
 
@@ -52,5 +57,20 @@ export default new Service({
     status: method({
       GET: [validate, status],
     }),
+    sum: method({
+      GET: [sum]
+    }),
+    substraction: method({
+      GET: [substraction]
+    }),
+    division: method({
+      GET: [division]
+    }),
+    multiplication: method({
+      GET: [multiplication]
+    }),
+    generateRandomNumber: method({
+      GET: [generateRandomNumber]
+    })
   },
 })

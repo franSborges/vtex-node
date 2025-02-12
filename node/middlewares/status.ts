@@ -1,5 +1,5 @@
 export async function status(ctx: Context, next: () => Promise<any>) {
-  const {
+const {
     state: { code },
     clients: { status: statusClient },
   } = ctx
