@@ -1,0 +1,28 @@
+{
+  "store.custom#landingpage": {
+    "blocks": [
+      "flex-layout.row#landingpage-hero",
+      "flex-layout.row#landing-content"
+    ],
+    "props": {
+      "ttle": "My landig page"
+    }
+  },
+
+  "flex-layout.row#landingpage-hero": {
+    "children": [
+      "rich-text#hero-title"
+    ],
+    "props": {
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "padding": 3
+    }
+  },
+
+  "rich-text#hero-title": {
+    "props": {
+      "text": "Lorem sipson"
+    }
+  }
+}
